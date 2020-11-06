@@ -17,7 +17,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
     line-height: 1;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 ol, ul {
@@ -46,6 +46,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(45deg, #17171b 0%, #28282f 100%);
 }
 
 #main-content {
@@ -101,7 +102,7 @@ header {
 
 /* PROFILE CARD */
 
-header, #profile-card, #profile-card::before, #cover-image::before, #cover-image::after {
+header, #profile-card, #profile-card::before, #cover-image::before, #cover-image::after, #content-card {
     background-color: #31313a;
 }
 
@@ -111,6 +112,7 @@ header, #profile-card, #profile-card::before, #cover-image::before, #cover-image
     margin-left: 10px;
     border-radius: 10px;
     position: relative;
+    border-right: 1px solid rgba(255, 255, 255, 0.657);
 }
 
 #profile-card::before {
@@ -159,16 +161,125 @@ header, #profile-card, #profile-card::before, #cover-image::before, #cover-image
     transform: rotate(-10deg);
 }
 
-#logo {
+#logo, #profile-name {
     width: 50%;
     margin: 0 auto;
     position: relative;
     top: -100px;
+    text-align: center;
+}
+
+#profile-name {
+    color: white;
+}
+
+#profile-name span {
+    display: block;
+}
+
+.first-name {
+    font-size: 3.5rem;
+    letter-spacing: 5px;
+}
+
+.last-name {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+#profile-contact {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    border-top: 1px solid white;
+}
+
+#profile-contact div {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile-contact div:first-child {
+    border-right: 1px solid white;
+}
+
+#profile-contact div a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
 }
 
 /* CONTENT CARD */
 
 #content-card {
     padding: 20px;
-    background-color: blueviolet;
+    height: 90%;
+    flex: 1;
+    margin: auto 0;
+    position: relative;
+}
+
+.content-title {
+    font-size: 2rem;
+}
+
+.content-subtitle {
+    font-size: 1.5rem;
+}
+
+.content-title, .content-subtitle {
+    position: relative;
+    color: white;
+    margin: 10px 0;
+    width: 100%;
+}
+
+.content-title::before, .content-subtitle::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    opacity: 0.4;
+    border-radius: 50%;
+    top: 25%;
+}
+
+.content-title::before {
+    background-color: teal;
+    width: 30px;
+    height: 30px;
+    left: -10px;
+}
+
+.content-subtitle::before {
+    background-color: chartreuse;
+    height: 20px;
+    width: 20px;
+    left: -5px;
+}
+
+#content-card .content-title::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    opacity: 0.4;
+    width: 30px;
+    height: 30px;
+    left: -10px;
+    top: 25%;
+    border-radius: 50%;
+    background-color: teal;
+}
+
+.title-first-word {
+    color: teal;
+}
+
+.subtitle-first-word {
+    color: chartreuse;
 }
