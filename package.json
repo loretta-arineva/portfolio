@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/loretta-arineva/portfolio/issues"
   },
+  "start": "node script.js",
   "homepage": "https://github.com/loretta-arineva/portfolio#readme"
 }
