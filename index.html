@@ -10,21 +10,36 @@
     <meta name="description" content="">
     <meta http-equiv="expires" content="43200">
     <title>Loretta Arineva</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href="/font-awesome/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link href="./font-awesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
 </head>
 
 <body>
     <main>
+        <div class="background-squares">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
         <div id="main-content">
             <header>
                 <nav id="main-nav">
                     <ul>
-                        <li><a href="#about" class="nav-links"><i class="fas fa-cat"></i>About</a></li>
+                        <li><a href="#about" class="nav-links"><i class="fas fa-user"></i>About</a></li>
                         <span class="line"></span>
-                        <li><a href="#resume" class="nav-links"><i class="fas fa-book-dead"></i>Resume</a></li>
-                        <li><a href="#projects" class="nav-links"><i class="fas fa-file-code"></i>Projects</a></li>
+                        <li><a href="#resume" class="nav-links"><i class="fas fa-folder-open"></i>Resume</a></li>
+                        <li><a href="#projects" class="nav-links"><i class="fas fa-laptop-code"></i>Projects</a></li>
                         <li><a href="#contact" class="nav-links"><i class="fas fa-paper-plane"></i>Contact</a></li>
                     </ul>
                 </nav>
@@ -33,10 +48,10 @@
             <!-- Profile Card -->
             <section id="profile-card">
                 <div id="cover-image">
-                    <img src="/images/Kasai-Senshi-Loreta-Krasteva-cover-image.png" alt="">
+                    <img src="./images/Loretta-Arineva-Cover-Image.png" alt="">
                 </div>
                 <div id="logo">
-                    <img src="/images/loretta-arineva-logo-no-text.png" alt="Loretta Arineva's cute cat logo.">
+                    <img src="./images/loretta-arineva-logo-no-text.png" alt="Loretta Arineva's cute cat logo.">
                 </div>
                 <div id="profile-name">
                     <span class="first-name">Loretta</span>
@@ -45,40 +60,41 @@
                 <div id="social-links"></div>
                 <div id="profile-contact">
                     <div>
-                        <a href="#">Download CV</a>
+                        <a href="./images/loretta-arineva-logo.png" download="loretta-arineva-logo.png">Download CV</a>
                     </div>
                     <div>
-                        <a href="#">Contact Me</a>
+                        <a href="mailto:wowshifter@gmail.com">Contact Me</a>
                     </div>
                 </div>
             </section>
 
             <!-- About -->
             <section id="content-card">
-                <article id="about">
+                <article id="about" class="card-content-pg card-inner fadeInLeft selected">
                     <!-- Intro -->
                     <div class="introduction">
                         <div class="content-title title">
                             <h2 class=""><span class="title-first-word">About</span> Me</h2>
                         </div>
                         <div class="content">
-                            <div>
-                                <p>Hey, I am Loretta. A self-taught web developer eager to build upon my academic
-                                    foundations in computer technology. With passion for knowledge and
-                                    self-improvement.
-                                </p>
-                            </div>
-                            <div class="content-item-box">
-                                <p>Age: 21</p>
-                                <p>Available for hire: Yes!</p>
-                                <p>Residence: Germany</p>
-                                <p>Address: Eigeltingen, Germany</p>
-                            </div>
+                            <p>Hey there, I am Loretta. A self-taught web developer eager to build upon my academic
+                                foundations in computer technology.</p>
+                            <p>
+                                I value self-responsibility and honor in others and follow these standards for
+                                myself at all time.
+                            </p>
+                            <p>
+                                Passionate about self-improvement and knowledge, I embark on the path of creativity.
+                            </p>
+                            <p>
+                                My competence, adaptiveness and quick-wittedeness allow me to finish any given job
+                                quickly and efficiently.
+                            </p>
                         </div>
                     </div>
                     <!-- Services -->
                     <div class="services">
-                        <div class="content-subtitle  title">
+                        <div class="content-subtitle title">
                             <h3><span class="subtitle-first-word">My</span> Services</h3>
                         </div>
                         <div class="services-box-ct">
@@ -90,12 +106,25 @@
                         </div>
                     </div>
                     <!-- Facts  -->
-                    <div class=" facts">
+                    <div class="facts">
                         <div class="content-subtitle title">
                             <h3><span class="subtitle-first-word">Fun</span> Fact</h3>
                         </div>
-                        <div>
-                            <p>I have pet hundreds of cats</p>
+                        <div class="funfacts-wrap">
+                            <div>
+                                <img src="./images/Loretta-Arineva-Cat-Petting-white.png"
+                                    alt="An icon of a person petting a cat.">
+                                <p>Thousands of pets given to cats.</p>
+                            </div>
+                            <div>
+                                <img src="./images/Loretta-Arineva-Computer-Repair-white.png"
+                                    alt="An icon of a computer.">
+                                <p>Dozens of devices repaired.</p>
+                            </div>
+                            <div>
+                                <img src="./images/Loretta-Arineva-Tools-white.png" alt="An icon of a working tool.">
+                                <p>Lots of gadgets disassembled.</p>
+                            </div>
                         </div>
                     </div>
                     <!-- Hobbies -->
@@ -103,17 +132,18 @@
                         <div class="content-subtitle title">
                             <h3>Hobbies</h3>
                         </div>
-                        <div class="hobby-items">
+                        <div class="hobby-wrap">
                             <div>
-                                <img src="" alt="">
+                                <img src="./images/Loretta-Arineva-Coding-white.png"
+                                    alt="An icon of a coputer and a coding sign.">
                                 <p>Coding</p>
                             </div>
                             <div>
-                                <img src="" alt="">
+                                <img src="./images/Loretta-Arineva-Exercising-white.png" alt="">
                                 <p>Working Out</p>
                             </div>
                             <div>
-                                <img src="" alt="">
+                                <img src="./images/Loretta-Arineva-Digital-Drawing-white.png" alt="">
                                 <p>Digital Drawing</p>
                             </div>
                             <div>
@@ -122,7 +152,7 @@
                                 <p>I'm not kidding you!</p>
                             </div>
                             <div>
-                                <img src="" alt="">
+                                <img src="./images/Loretta-Arineva-Cleaning-white.png" alt="">
                                 <p>Cleaning</p>
                                 <p>You heard me...</p>
                             </div>
@@ -131,7 +161,7 @@
                                 <p>Playing the Guitar</p>
                             </div>
                             <div>
-                                <img src="" alt="">
+                                <img src="./images/Loretta-Arineva-Camera-white.png" alt="">
                                 <p>Photography</p>
                                 <p>I just really like cute animals and nature</p>
                             </div>
@@ -141,7 +171,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="quotes">
+                    <div class="quotes card-content-pg">
                         <div class="content-subtitle title">
                             <h3>Quotes</h3>
                         </div>
@@ -157,8 +187,8 @@
                 </article>
 
                 <!-- Resume -->
-                <article id="resume">
-                    <div class="introduction">
+                <article id="resume" class="animated fadeOutLeft card-inner hidden">
+                    <div class="introduction card-content-pg">
                         <div class="content-title">
                             <h2>Resume</h2>
                         </div>
@@ -191,7 +221,8 @@
                                 </div>
                                 <div class="resume-item">
                                     <div class="date"><time datetime="2016-04">May 2016</time> - <time
-                                            datetime="2016-05">June 2016</time>
+                                            datetime="2016-05">June
+                                            2016</time>
                                     </div>
                                     <div class="place">
                                         <p class="item-title">Betacom - Internship</p>
@@ -373,18 +404,54 @@
                         </div>
                     </div>
                     <!-- Skills -->
-                    <div class="skills">
+                    <div class="skills card-content-pg">
                         <div class="content-subtitle">
                             <h3><span class="subtitle-first-word">My</span> Skills</h3>
                         </div>
                         <!-- Gained Skills -->
                         <div class="gained-skills">
                             <div class="coding">
-                                <div class="html"></div>
-                                <div class="css"></div>
-                                <div class="javascript"></div>
+                                <i class="fas fa-code">
+                                    <h3>Coding</h3>
+                                </i>
+                                <div class="html">
+                                    <span>
+                                        <p>85%</p>
+                                    </span>
+                                    <p>HTML</p>
+                                </div>
+                                <div class="css">
+                                    <span>
+                                        <p>70%</p>
+                                    </span>
+                                    <p>CSS</p>
+                                </div>
+                                <div class="javascript">
+                                    <span>
+                                        <p>50%</p>
+                                    </span>
+                                    <p>JavaScript</p>
+                                </div>
                             </div>
-                            <div class="languages"></div>
+
+                            <div class="languages">
+                                <i class="fas fa-flag">
+                                    <h3>Languages</h3>
+                                </i>
+                                <div class="english">
+                                    <p>English</p>
+                                    <span></span>
+                                </div>
+                                <div class="bulgarian">
+                                    <p>Bulgarian - native</p>
+                                    <span></span>
+                                </div>
+                                <div class="german">
+                                    <p>German</p>
+                                    <span></span>
+                                </div>
+                            </div>
+
                             <div class="soft-skills"></div>
                             <div class="knowledge"></div>
                             <!-- /gained -->
@@ -400,22 +467,118 @@
                         </div>
                         <!-- /Skills -->
                     </div>
-                    <div class="testimonials">
+                    <div class="testimonials card-content-pg">
                         <div class="content-subtitle">
                             <h3>Testimonials</h3>
                         </div>
                     </div>
                 </article>
                 <!-- Projects -->
-                <article id="projects">
+                <article id="projects" class="card-content-pg card-inner animated fadeOutLeft hidden">
+                    <div class="content-title">
+                        <h2>Projects</h2>
+                    </div>
+                    <div class="project-grid">
+                        <div class="grid-item">
+                            <a href="https://github.com/" target="_blank" class="source">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <img src="./images/Loretta-Arineva-Cover-Image.png" class="project-image" alt="">
+                            <div class="overlay">
+                                <a href="https://github.com/" target="_blank" class="project-website">
+                                    <span></span>
+                                </a>
+                                <div class="project-stack">
+                                    <div class="stack">HTML</div>
+                                    <div class="stack">CSS</div>
+                                    <div class="stack">JavaScript</div>
+                                    <div class="stack">CSS</div>
+                                    <div class="stack">CSS</div>
+                                </div>
+                                <p class="project-title">Portfolio v1</p>
+                            </div>
+                        </div>
+                        <!-- project grid ends here -->
+                        <div class="grid-item">
+                            <a href="https://github.com/" target="_blank" class="source">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <img src="./images/Music and sound.png" class="project-image" alt="">
+                            <div class="overlay">
+                                <a href="https://github.com/" target="_blank" class="project-website">
+                                    <span></span>
+                                </a>
+                                <div class="project-stack">
+                                    <div class="stack">HTML</div>
+                                    <div class="stack">CSS</div>
+                                    <div class="stack">JavaScript</div>
+                                    <div class="stack">CSS</div>
+                                    <div class="stack">CSS</div>
+                                </div>
+                                <p class="project-title">Portfolio v1</p>
+                            </div>
+                        </div>
+                        <!-- project grid ends here -->
+                        <div class="grid-item">
+                            <a href="https://github.com/" target="_blank" class="source">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <img src="./images/Loretta-Arineva-Cover-Image.png" class="project-image" alt="">
+                            <div class="overlay">
+                                <a href="https://github.com/" target="_blank" class="project-website">
+                                    <span></span>
+                                </a>
+                                <div class="project-stack">
+                                    <div class="stack">HTML</div>
+                                    <div class="stack">CSS</div>
+                                    <div class="stack">JavaScript</div>
+                                    <div class="stack">CSS</div>
+                                    <div class="stack">CSS</div>
+                                </div>
+                                <p class="project-title">Portfolio v1</p>
+                            </div>
+                        </div>
+                        <!-- project grid ends here -->
+                        <div class="grid-item">
+                            <a href="https://github.com/" target="_blank" class="source">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <img src="./images/Loretta-Arineva-Cover-Image.png" class="project-image" alt="">
+                            <div class="overlay">
+                                <a href="https://github.com/" target="_blank" class="project-website">
+                                    <span></span>
+                                </a>
+                                <div class="project-stack">
+                                    <div class="stack">HTML</div>
+                                    <div class="stack">CSS</div>
+                                    <div class="stack">JavaScript</div>
+                                    <div class="stack">CSS</div>
+                                    <div class="stack">CSS</div>
+                                </div>
+                                <p class="project-title">Portfolio v1</p>
+                            </div>
+                        </div>
+                        <!-- project grid ends here -->
+                    </div>
                 </article>
                 <!-- Contact -->
-                <article id="contact">
+                <article id="contact" class="card-content-pg card-inner animated fadeOutLeft hidden">
                     <div class="content-title">
                         <h2><span class="title-first-word">Get</span> in Touch</h2>
                     </div>
-                    <div class="content-subtitle">
-                        <h3><span class="subtitle-first-word">Contact</span> Form</h3>
+                    <div class="contact-form">
+                        <div class="content-subtitle">
+                            <h3><span class="subtitle-first-word">Contact</span> Form</h3>
+                        </div>
+                        <form action="https://formsubmit.co/loretta.arineva@gmail.com" method="POST">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Full Name">
+                                <input type="email" id="email" name="email" placeholder="Email Address">
+                            </div>
+                            <textarea name="message" name="message" id="message" cols="50" rows="3"
+                                placeholder="Your Message"></textarea>
+                            <button>Send message</button>
+                        </form>
                     </div>
                 </article>
             </section>
