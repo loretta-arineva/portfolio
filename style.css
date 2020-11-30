@@ -159,7 +159,9 @@ header {
     position: absolute;
     left: 0;
     bottom: 0;
-    background-image: linear-gradient(45deg, #31313a, #6a00f4 50%, #b100e8 80%, #f20089);
+    background-image: -moz-linear-gradient(45deg, #31313a, #18647e 50%, #2a8aaa 80%, #37c2f1);
+    background-image: -webkit-linear-gradient(45deg, #31313a, #18647e 50%, #2a8aaa 80%, #37c2f1);
+    background-image: linear-gradient(45deg, #31313a, #18647e 50%, #2a8aaa 80%, #37c2f1);
 }
 
 #main-nav ul li:last-of-type::after {
@@ -180,7 +182,6 @@ header, #profile-card, #profile-card::before, #cover-image::before, #cover-image
 
 #profile-card {
     width: 460px;
-    /* height: fit-content; */
     margin-left: 10px;
     border-radius: 10px;
     position: relative;
@@ -254,9 +255,9 @@ header, #profile-card, #profile-card::before, #cover-image::before, #cover-image
     border-radius: 50%;
     top: 13px;
     left: -5px;
-    background: -moz-linear-gradient(-45deg, rgba(255, 152, 0, 0.4) 0%, rgba(255, 152, 0, 0.01) 100%);
-    background: -webkit-linear-gradient(-45deg, rgba(255, 152, 0, 0.4) 0%, rgba(255, 152, 0, 0.01) 100%);
-    background: linear-gradient(135deg, rgba(255, 152, 0, 0.4) 0%, rgba(255, 152, 0, 0.01) 100%);
+    background: -moz-linear-gradient(-45deg, #37c2f166 0%, rgba(255, 152, 0, 0.01) 100%);
+    background: -webkit-linear-gradient(-45deg, #37c2f166 0%, rgba(255, 152, 0, 0.01) 100%);
+    background: linear-gradient(135deg, #37c2f166 0%, rgba(255, 152, 0, 0.01) 100%);
 }
 
 #logo, #profile-name {
@@ -314,6 +315,11 @@ header, #profile-card, #profile-card::before, #cover-image::before, #cover-image
     height: 100%;
     width: 100%;
     text-decoration: none;
+    transition: 0.3s color;
+}
+
+#profile-contact div:hover a {
+    color: #37c2f1;
 }
 
 /* CONTENT CARD */
@@ -367,7 +373,7 @@ header, #profile-card, #profile-card::before, #cover-image::before, #cover-image
 }
 
 .content-subtitle::before {
-    background-color: chartreuse;
+    background-color: #9eb7e5;
     height: 20px;
     width: 20px;
     left: -5px;
@@ -391,10 +397,14 @@ header, #profile-card, #profile-card::before, #cover-image::before, #cover-image
 }
 
 .subtitle-first-word {
-    color: chartreuse;
+    color: #9eb7e5;
 }
 
 /* About */
+
+#about .content {
+    padding: 25px 50px;
+}
 
 .card-content-pg {
     padding: 0 30px;
@@ -429,27 +439,6 @@ header, #profile-card, #profile-card::before, #cover-image::before, #cover-image
     margin-bottom: 20px;
 }
 
-.content-item-box {
-    display: grid;
-    grid-template-areas: 'left-top right-top' 'lelft-bottom right-bottom';
-}
-
-.content-item-box:nth-child(1) {
-    grid-area: left-top;
-}
-
-.content-item-box:nth-child(2) {
-    grid-area: left-bottom;
-}
-
-.content-item-box:nth-child(3) {
-    grid-area: right-top;
-}
-
-.content-item-box:nth-child(4) {
-    grid-area: right-bottom;
-}
-
 /* Services */
 
 .services-box-ct {
@@ -464,12 +453,12 @@ header, #profile-card, #profile-card::before, #cover-image::before, #cover-image
     display: flex;
     justify-content: center;
     align-items: center;
-    background: -moz-linear-gradient(-45deg, rgba(255, 152, 0, 0.15) 0%, rgba(255, 152, 0, 0.01) 100%);
-    background: -webkit-linear-gradient(-45deg, rgba(255, 152, 0, 0.15) 0%, rgba(255, 152, 0, 0.01) 100%);
-    background: linear-gradient(135deg, rgba(255, 152, 0, 0.15) 0%, rgba(255, 152, 0, 0.01) 100%);
+    background: -moz-linear-gradient(-45deg, rgba(0, 153, 255, 0.15) 0%, rgba(0, 119, 255, 0.01) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(0, 153, 255, 0.15) 0%, rgba(0, 119, 255, 0.01) 100%);
+    background: linear-gradient(135deg, rgba(0, 153, 255, 0.15) 0%, rgba(0, 119, 255, 0.01) 100%);
     font-size: 1.8rem;
     letter-spacing: 1px;
-    color: #ff9800;
+    color: #37c2f1;
 }
 
 .code-smaller {
@@ -496,7 +485,7 @@ header, #profile-card, #profile-card::before, #cover-image::before, #cover-image
 
 .funfacts-wrap div, .hobby-wrap div {
     margin-right: 5px;
-    padding: 50px 0;
+    padding: 50px 15px;
     text-align: center;
     position: relative;
 }
@@ -516,12 +505,22 @@ header, #profile-card, #profile-card::before, #cover-image::before, #cover-image
 }
 
 .funfacts-wrap div img, .hobby-wrap img {
-    width: 50px;
+    width: 55px;
+    box-sizing: border-box;
 }
 
 .hobby-wrap div img {
     border: 1px solid #fff;
+    width: 70px;
     border-radius: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+    transition: 0.3s width, 0.3s background-color;
+}
+
+.hobby-wrap div:hover img {
+    width: 80px;
+    background-color: #37c2f1;
 }
 
 .hobby-wrap img::after {
@@ -529,7 +528,6 @@ header, #profile-card, #profile-card::before, #cover-image::before, #cover-image
     height: 1px;
     width: 50%;
     display: block;
-    /* position: absolute; */
     bottom: 0;
     left: 0;
     background-color: white;
@@ -592,7 +590,7 @@ blockquote {
 .fa-briefcase, .fa-graduation-cap {
     margin-right: 15px;
     font-size: 2rem;
-    color: #ff9800;
+    color: #37c2f1;
 }
 
 .resume-col .title::after {
@@ -611,8 +609,8 @@ blockquote {
 }
 
 .present {
-    border-color: #ff9800;
-    color: #ff9800;
+    border-color: #37c2f1;
+    color: #37c2f1;
 }
 
 .place {
@@ -804,8 +802,8 @@ blockquote {
 }
 
 .contact-form input:focus, .contact-form textarea:focus {
-    border-bottom: 1px solid #ff9800;
-    color: #ff9800;
+    border-bottom: 1px solid #37c2f1;
+    color: #37c2f1;
 }
 
 .form-group {
@@ -838,9 +836,15 @@ blockquote {
 }
 
 .contact-form button:hover {
-    border: 1.2px solid #ff9800;
-    background: #ff9800;
+    border: 1.2px solid #37c2f1;
+    background: #37c2f1;
     border-radius: 15px;
+}
+
+}
+
+.contact-form button:active {
+    outline: none;
 }
 
 /* Tabs */
