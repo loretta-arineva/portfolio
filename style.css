@@ -545,6 +545,7 @@ blockquote {
 }
 
 .mini-profile {
+    text-align: center;
     width: 40%;
     margin: 0 auto 35px;
     display: flex;
